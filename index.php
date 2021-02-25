@@ -17,22 +17,54 @@
                 hello
             </p>
         </div>
-        <div class="btn" id="1"></div>
-        <div class="btn" id="2"></div>
-        <div class="btn" id="3"></div>
-        <div class="btn" id="4"></div>
-        <div class="btn" id="5"></div>
-        <div class="btn" id="6"></div>
-        <div class="btn" id="7"></div>
-        <div class="btn" id="8"></div>
-        <div class="btn" id="9"></div>
-        <div class="btn" id="0"></div>
-        <div class="btn" id="more"></div>
-        <div class="btn" id="less"></div>
-        <div class="btn" id="divise"></div>
-        <div class="btn" id="soustraction"></div>
-        <div class="btn" id="delete"></div>
-        <div class="btn" id="result"></div>
+        <div class="btn" id="i1">
+            <p>1</p>
+        </div>
+        <div class="btn" id="i2">
+            <p>2</p>
+        </div>
+        <div class="btn" id="i3">
+            <p>3</p>
+        </div>
+        <div class="btn" id="i4">
+            <p>4</p>
+        </div>
+        <div class="btn" id="i5">
+            <p>5</p>
+        </div>
+        <div class="btn" id="i6">
+            <p>6</p>
+        </div>
+        <div class="btn" id="i7">
+            <p>7</p>
+        </div>
+        <div class="btn" id="i8">
+            <p>8</p>
+        </div>
+        <div class="btn" id="i9">
+            <p>9</p>
+        </div>
+        <div class="btn" id="i0">
+            <p>0</p>
+        </div>
+        <div class="btn" id="more">
+            <p>+</p>
+        </div>
+        <div class="btn" id="less">
+            <p>-</p>
+        </div>
+        <div class="btn" id="divise">
+            <p>/</p>
+        </div>
+        <div class="btn" id="mutiplication">
+            <p>*</p>
+        </div>
+        <div class="btn" id="delete">
+            <p>c</p>
+        </div>
+        <div class="btn" id="result">
+            <p>=</p>
+        </div>
     </div>
 
 
