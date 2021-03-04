@@ -4,7 +4,7 @@ function main() {
 }
 
 function initCalculator() { 
-    firstInput = "Hello stranger";
+    firstInput = "Bienvenue !";
     screen.innerHTML += firstInput;
 }  
 
@@ -13,8 +13,11 @@ function beginningUser() {
 }
 
 
+
+
+
 function addNumbers(buttonCollection) { 
-    
+    // screen.innerHTML = 
 }
 
 
@@ -24,7 +27,7 @@ buttonCollection = document.getElementsByClassName('btn');
 // Initialisation des boutons de 1 à 9
 let buttonSelector = [];
 for(i=0; i<=9; i++) { 
-    buttonSelector[i] = document.getElementById('i'+[i]);
+    buttonSelector[i] = document.getElementById('i'+[i]).addEventListener('click', addNumbers);
 }
 
 // boutons spéciaux récupérés à partir de la collection
