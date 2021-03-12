@@ -1,44 +1,76 @@
-function main() { 
-    setTimeout(initCalculator, 2000);
-    setTimeout(beginningUser,5000);
+function addNumber(number) { // ajouter un nombre à l'écran 
+    screen.innerHTML += (number.currentTarget.innerHTML)
+    return screen
 }
 
-function initCalculator() { 
-    firstInput = "Bienvenue !";
-    screen.innerHTML += firstInput;
-}  
+function createValue(){ 
+    value =  parseInt(screen.innerHTML)
+    screen.innerHTML = ""
+    console.log(value);
+    return value;
+}
 
-function beginningUser() { 
-    screen.innerHTML = "";
+function operatorValuePlus() { 
+    value = "+"
+    console.log(value);
+    return value;
+}
+
+function operatorValueMoins() { 
+    value = "-"
+    console.log(value);
+    return value;
+}
+
+function operatorValueMultiplie() { 
+    value = "*"
+    console.log(value);
+    return value;
+}
+
+function operatorValueDivise() { 
+    value = "/"
+    console.log(value);
+    return value;
 }
 
 
+// Initialisation des variables 
+
+// valeus de stockage
+let valueStorage = [];
 
 
-
-function addNumbers(buttonCollection) { 
-    // screen.innerHTML = 
+// valeur DOM
+let number = []*10
+let screen = document.getElementById('ecran')
+for(let i=0; i<10; i++ ) { // Initialisation des boutons de 0 à 9
+    number[i] = document.getElementById(`i${i}`).addEventListener('click', addNumber)
 }
 
+let plus        =     document.getElementById('iplus').addEventListener('click', function() { 
+    valueStorage.push(createValue())
+    valueStorage.push(operatorValuePlus())
+});
 
-// Création de la bibliothèque des boutons
-buttonCollection = document.getElementsByClassName('btn');
+let moins       =     document.getElementById('imoins').addEventListener('click', function() { 
+    valueStorage.push(createValue())
+    valueStorage.push(operatorValueMoins())
+});
 
-// Initialisation des boutons de 1 à 9
-let buttonSelector = [];
-for(i=0; i<=9; i++) { 
-    buttonSelector[i] = document.getElementById('i'+[i]).addEventListener('click', addNumbers);
-}
+let multiplie   =     document.getElementById('imultiplie').addEventListener('click', function() { 
+    valueStorage.push(createValue())
+    valueStorage.push(operatorValueMultiplie())
+});
 
-// boutons spéciaux récupérés à partir de la collection
-dotButton = buttonCollection[10];
-moreButton = buttonCollection[11];
-lessButton = buttonCollection[12];
-diviseButton = buttonCollection[13];
-multiplicationButton = buttonCollection[14];
-deleteButton = buttonCollection[15];
-resultButton = buttonCollection[16];
+let divise      =     document.getElementById('idivise').addEventListener('click', function() { 
+    valueStorage.push(createValue())
+    valueStorage.push(operatorValueDivise())
+});
 
-screen = document.getElementById('ecranUtilisateur');
-
-main();
+let resultat    =     document.getElementById('iresult').addEventListener('click', function() { 
+    valueStorage.push(createValue())
+    valueStorage = eval(valueStorage.join(''))
+    console.log(valueStorage)
+    screen.innerHTML = valueStorage    
+});
