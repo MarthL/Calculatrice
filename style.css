@@ -1,3 +1,90 @@
+@media (max-width: 1600px) { 
+
+    .container .calculatrice { 
+        width: 350px;
+        height: 550px;
+    }
+
+    .numbers { 
+        position: relative;
+        bottom: 30px;
+    }
+
+    .operator { 
+        position: relative;
+        bottom: 30px;
+    }
+
+    .numbers > button { 
+        width: 39px;
+        height: 39px;
+    }
+
+    .operator > button { 
+        width: 39px;
+        height: 39px;
+    }
+
+    button#iresult { 
+        position: relative;
+        top: 50px;
+    }
+}
+
+@media (max-width: 1200px) { 
+
+    .container .calculatrice { 
+        width: 350px;
+        height: 550px;
+    }
+
+    .numbers > button { 
+        width: 35px;
+        height: 35px;
+    }
+
+    .operator > button { 
+        width: 35px;
+        height: 35px;
+    }
+
+    button#iresult { 
+        position: relative;
+        top: 50px;
+    }
+}
+
+
+@media (max-width: 322px) { 
+
+    .container .calculatrice { 
+        width: 250px;
+        height: 500px;
+    }
+
+    .calculatrice .buttonsCollection { 
+        height: 450px;
+        width: 200px;
+    }
+
+    .numbers > button { 
+        width: 20px;
+        height: 20px;
+    }
+
+    .operator > button { 
+        width: 20px;
+        height: 20px;
+    }
+
+    button#iresult { 
+        width: 20px;
+        position: relative;
+        top: 50px;
+        right: 30px;
+    }
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -23,9 +110,10 @@ h1 {
 
 .calculatrice { 
     height: 80vh;
-    width: 27vw;
+    width: 25vw;
     border: 5px black solid;
     background-color: grey;
+    border-radius: 25px;
 }
 
 #ecran { 
@@ -48,7 +136,7 @@ h1 {
 }
 
 .numbers * {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .operator { 
@@ -81,5 +169,7 @@ button#delete {
 
 button#iresult { 
     width: 150px;
+    position: relative;
+    top: 30px;
 } 
 
