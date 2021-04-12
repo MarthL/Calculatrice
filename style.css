@@ -1,89 +1,225 @@
-@media (max-width: 1600px) { 
+@media only screen and (max-width: 1000px) {
+
+    .buttonsCollection button { 
+        width: 80px;
+        height: 80px;
+    }
 
     .container .calculatrice { 
-        width: 350px;
-        height: 550px;
-    }
-
-    .numbers { 
-        position: relative;
-        bottom: 30px;
-    }
-
-    .operator { 
-        position: relative;
-        bottom: 30px;
-    }
-
-    .numbers > button { 
-        width: 39px;
-        height: 39px;
-    }
-
-    .operator > button { 
-        width: 39px;
-        height: 39px;
-    }
-
-    button#iresult { 
-        position: relative;
-        top: 50px;
-    }
-}
-
-@media (max-width: 1200px) { 
-
-    .container .calculatrice { 
-        width: 350px;
-        height: 550px;
-    }
-
-    .numbers > button { 
-        width: 35px;
-        height: 35px;
-    }
-
-    .operator > button { 
-        width: 35px;
-        height: 35px;
-    }
-
-    button#iresult { 
-        position: relative;
-        top: 50px;
-    }
-}
-
-
-@media (max-width: 322px) { 
-
-    .container .calculatrice { 
-        width: 250px;
-        height: 500px;
+        width: 60vw;
+        height: 80vh;
     }
 
     .calculatrice .buttonsCollection { 
-        height: 450px;
-        width: 200px;
+        width: 100%;
+        height: 100%;
     }
 
-    .numbers > button { 
-        width: 20px;
-        height: 20px;
+    .numbers +  .operator { 
+        width: 100%;
     }
 
-    .operator > button { 
-        width: 20px;
-        height: 20px;
+    .buttonsCollection .numbers button#i0 { 
+        position: absolute;
+        top: 80vh;
+        left: 21vw;
+    }   
+    
+    .buttonsCollection .numbers button#i1 { 
+        position: absolute;
+        top: 66vh;
+        left: 21vw;
+    }   
+    
+    .buttonsCollection .numbers button#i2 { 
+        position: absolute;
+        top: 66vh;
+        left: 38vw;
+    }   
+    
+    .buttonsCollection .numbers button#i3 { 
+        position: absolute;
+        top: 66vh;
+        left: 54vw; 
+    }   
+    
+    .buttonsCollection .numbers button#i4 { 
+        position: absolute;
+        top: 50vh;
+        left: 21vw;
+    }   
+    
+    .buttonsCollection .numbers button#i5 { 
+        position: absolute;
+        top: 50vh;
+        left: 38vw;
+    }   
+    
+    .buttonsCollection .numbers button#i6 { 
+        position: absolute;
+        top: 50vh;
+        left: 54vw;
+    }   
+    
+    .buttonsCollection .numbers button#i7 { 
+        position: absolute;
+        top: 34vh;
+        left: 21vw;
+    }   
+    
+    .buttonsCollection .numbers button#i8 { 
+        position: absolute;
+        top: 34vh;
+        left: 38vw;
+    }   
+    
+    .buttonsCollection .numbers button#i9 { 
+        position: absolute;
+        top: 34vh;
+        left: 54vw;
+    }   
+    
+    .buttonsCollection .operator button#iplus { 
+        position: absolute;
+        height: 13vh;
+        top: 77vh;
+        right: 20vw;
     }
+    
+    .buttonsCollection .operator button#imoins { 
+        position: absolute;
+        top: 66vh; 
+        right: 20vw;
+    }
+    
+    .buttonsCollection .operator button#imultiplie { 
+        position: absolute;
+        top: 50vh; 
+        right: 20vw;
+    }
+    
+    .buttonsCollection .operator button#idivise { 
+        position: absolute;
+        top: 34vh; 
+        right: 20vw;
+    }
+    
+    .buttonsCollection .operator button#idecimal { 
+        position: absolute;
+        top: 80vh;
+        left: 38vw;
+    }
+    
+    .buttonsCollection .operator button#iresult { 
+        position: absolute;
+        top: 80vh;
+        left: 54vw;
+    }
+    
 
-    button#iresult { 
-        width: 20px;
-        position: relative;
-        top: 50px;
-        right: 30px;
-    }
 }
+
+@media only screen and (max-width: 750px) {
+    
+    .buttonsCollection button { 
+        width: 60px;
+        height: 60px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .buttonsCollection button { 
+        width: 45px;
+        height: 45px;
+    }
+
+    .buttonsCollection .operator button#iresult {
+        font-size: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .buttonsCollection button { 
+        width: 38px;
+        height: 38px;
+    }
+
+    .container .calculatrice #ecran { 
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .container .calculatrice { 
+        height: 70vh;
+        width: 70vw;
+    }
+
+    .buttonsCollection .operator button#iplus { 
+        position: absolute;
+        top: 76vh;
+        left: 66vw;
+        height: 10vh;
+    }
+
+    .buttonsCollection .operator button#imoins { 
+        position: absolute;
+        left: 66vw;
+    }
+
+    .buttonsCollection .operator button#imultiplie { 
+        position: absolute;
+        top: 53vh;
+        left: 66vw;
+    }
+
+    .buttonsCollection .operator button#idivise { 
+        position: absolute;
+        left: 66vw;
+        top: 40vh;
+    }
+
+    .buttonsCollection .numbers button#i4 { 
+        position: absolute;
+        top: 53vh;
+    }
+
+    .buttonsCollection .numbers button#i5 { 
+        position: absolute;
+        top: 53vh;
+    }
+
+    .buttonsCollection .numbers button#i6 { 
+        position: absolute;
+        top: 53vh;
+    }
+
+    .buttonsCollection .numbers button#i7 { 
+        position: absolute;
+        top: 40vh;
+    }
+
+    .buttonsCollection .numbers button#i8 { 
+        position: absolute;
+        top: 40vh;
+    }
+
+    .buttonsCollection .numbers button#i9 { 
+        position: absolute;
+        top: 40vh;
+    }
+    
+
+
+}
+
+
+
+
 
 body{
     margin: 0;
@@ -125,28 +261,9 @@ h1 {
     letter-spacing: .5px;
     border: 5px solid black;
     margin: 50px;
-    height: 80px;
+    height: 8.5vh;
 }
 
-
-
-.numbers { 
-    margin-left: 2vh;
-    margin-top: 3vh;
-}
-
-.numbers * {
-    margin-top: 20px;
-}
-
-.operator { 
-    display: flex;
-    flex-direction: column;
-    align-items:flex-end;
-    justify-content:right;
-    margin-top: 5vh;
-    margin-right: 1vw;
-}
 
 .buttonsCollection { 
     display: flex;
@@ -161,15 +278,102 @@ button {
     border-radius: 40%;
 }
 
-button#delete {
-    margin-top: 20px;
-    width: 200px;
-    margin: 10px;
+
+
+.numbers button#i0 { 
+    position: relative;
+    top: 49vh;
+    left: .5vw;
+}   
+
+.numbers button#i1 { 
+    position: absolute;
+    top: 65vh;
+    left: 38vw;
+}   
+
+.numbers button#i2 { 
+    position: absolute;
+    top: 65vh;
+    left: 44vw;
+}   
+
+.numbers button#i3 { 
+    position: absolute;
+    top: 65vh;
+    left: 50vw;
+}   
+
+.numbers button#i4 { 
+    position: absolute;
+    top: 50vh;
+    left: 38vw;
+}   
+
+.numbers button#i5 { 
+    position: absolute;
+    top: 50vh;
+    left: 44vw;
+}   
+
+.numbers button#i6 { 
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+}   
+
+.numbers button#i7 { 
+    position: absolute;
+    top: 35vh;
+    left: 38vw;
+}   
+
+.numbers button#i8 { 
+    position: absolute;
+    top: 35vh;
+    left: 44vw;
+}   
+
+.numbers button#i9 { 
+    position: absolute;
+    top: 35vh;
+    left: 50vw;
+}   
+
+ .operator button#iplus { 
+    position: absolute;
+    height: 13vh;
+    top: 77vh;
+    right: 38vw;
+    border-radius: 15px;
 }
 
-button#iresult { 
-    width: 150px;
-    position: relative;
-    top: 30px;
-} 
+ .operator button#imoins { 
+    position: absolute;
+    top: 65vh; 
+    right: 38vw;
+}
 
+.operator button#imultiplie { 
+    position: absolute;
+    top: 50vh; 
+    right: 38vw;
+}
+
+.operator button#idivise { 
+    position: absolute;
+    top: 35vh; 
+    right: 38vw;
+}
+
+.operator button#idecimal { 
+    position: absolute;
+    top: 82vh; 
+    left: 44vw;
+}
+
+.operator button#iresult { 
+    position: absolute;
+    top: 82vh;
+    left: 50vw;
+}
